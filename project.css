@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(27, 49, 32);
+    padding: 0 60px;
+    font-family: Poppins;
+}
+.service-intro{
+    color: white;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.service-intro h1{
+    font-size: 38px;
+    font-family: Poppins;
+    font-weight: 600;
+    margin: 10px;
+}
+.service-intro p{
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    margin:auto ;
+    width: 540px;
+}
+
+/* Service List */
+.service-list{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
+    gap: 20px;
+    color: rgb(27, 49, 32);
+    align-content: center;
+    justify-content: center;
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6" "card7 card8";
+
+}
+
+.cards{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    align-self: center;
+}
+
+
+.card1 {grid-area: card1;}
+.card2 {grid-area: card2;}
+.card3 {grid-area: card3;}
+.card4 {grid-area: card4;}
+.card5 {grid-area: card5;}
+.card6 {grid-area: card6;}
+.card7 {grid-area: card7;}
+.card8 {grid-area: card8;}
+
+.header i{
+    font-size: 40px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.header h4{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.header p{
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+
+
+/* .header p{
+  clear: left;
+  margin: 20px;
+} */
+.clearfix {
+  clear: left;
+  margin: 20px;
+}
+
+/* Tablet */
+@media (max-width:768px) {
+    body{
+        padding: 35px;
+    }
+    .service-intro h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 5px;
+}
+    .service-intro p{
+    font-size: 14px;
+    width: 70%;
+    max-width: 450px;
+}
+
+.header i{
+    font-size: 36px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.header h4{
+    padding-top: 14px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.header p{
+    font-size: 16px;
+    font-weight: 400px;
+}
+}
+
+@media (max-width:600px){
+.service-list{
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8";
+}
+}
+
+
+
+/* Mobile Phone */
+
+@media (max-width:425px) {
+    body{
+        padding: 15px;
+    }
+    .service-intro h1{
+    font-size: 26px;
+}
+    .service-intro p{
+    font-size: 12px;
+}
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .base p i {
+            color: blueviolet;
+        }
+
+        .div11, .div12 {
+            
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+
+        .bisi {
+            border: solid 2px black;
+        }
+
+        .funke {
+            background-color: brown;
+        }
+
+
+        .funke.bisi {
+            margin: 30px;
+            background-color: aqua;
+        }
+
+        #div1 .base ~ div {
+            background-color: pink;
+        }
+
+        [style~="darkgreen;"] {
+            border: dashed 2px purple;
+        }
+
+        #div1:hover .base {
+            background-color: rgb(138, 92, 92);
+            margin-top: 100px;
+
+        }
+
+        .div12::after {
+            content: url(../fi.jpg);
+        }
+
+        ::selection {
+            color: red;
+            background-color: yellow;
+        }
+
+
+
+        /* a:link {
+            color: blueviolet;
+        }
+
+        a:visited {
+            color: peachpuff;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: orange;
+        } */
+    </style>
+</head>
+<body>
+
+    <!-- <div id="div1" class="bisi funke">
+        <div class="base">4
+            <p>hello <i>world</i></p>
+            <div class="big"></div>
+        </div>
+        <div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div id="div4" class="bisi"></div>
+    <div id="div5" class="bisi"></div>
+    <div id="div2" class="funke"></div>
+
+    <input type="text" name="funke david" id="">
+
+    <a href="assignment8.html">click me</a> -->
+
+    <div class="div10" >
+        <div class="div11">&#x1F604
+        </div>
+        <div class="div12"> Hello </div>
+    </div>
+    
+    
+</body>
+</html>

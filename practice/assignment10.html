@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(#74ebd5, #4c8ca5);
+        display: flex;
+        justify-content: cover;
+        align-items: center;
+        /* height: 5.0; */
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+      .login-wrapper {
+        background-color: white;
+        padding: 40px;
+        border-radius: 16px;
+        width: 250px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #555;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+      .login-wrapper h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+      }
+      input[type="text"]::placeholder,
+      input[type="password"]::placeholder {
+        letter-spacing: 1px;
+        color: #aaa;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #2e8ece;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #083450;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+  </body>
+</html>

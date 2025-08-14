@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <style>
+        body {
+          font-family: Georgia, "Times New Roman", serif;
+          background-color: bisque;
+          text-align: center;
+        }
+        h1 {
+          margin: 20px;
+        }
+        .pricing-container {
+          display: flex;
+          justify-content: center;
+          padding: 40px;
+          display: flex;
+          gap: 20px;
+        }
+        .pricing-card {
+          width: 300px;
+          padding: 40px 20px;
+          border-radius: 20px;
+          color: black;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: transform 0.2s;
+        }
+        .pricing-card:hover {
+          transform: scale(0.2s);
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .basic {
+          background: linear-gradient(#6a11cb, #2575fc);
+        }
+        .standard {
+          background: linear-gradient(#ff6a00, #ee0979);
+        }
+        .premium {
+          background: linear-gradient(#00c6ff, #0072ff);
+        }
+        .price {
+          font-size: 25px;
+          font-weight: bold;
+          margin: 10px;
+        }
+        ul {
+          list-style: none;
+          margin: 20px;
+          text-align: left;
+        }
+        li::before {
+          content: "✔️ ";
+          margin-right: 6px;
+        }
+        .cta-btn {
+        display: inline-block;
+        background-color: white;
+        color: blue;
+        padding: 12px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color: 0.7s, color 0.7s;
+      }
+       .pricing-card:hover .cta-btn {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Choose Your Plan</h1>
+
+    <div class="pricing-container">
+      <!-- Basic Plan -->
+
+      <div class="pricing-card basic">
+        <h2>Basic</h2>
+        <p class="price">#15,000/month</p>
+        <ul>
+          <li>1 User</li>
+          <li>5GB Storage</li>
+          <li>Email Support</li>
+          <li>Community Access</li>
+        </ul>
+        <a href="#" class="cta-btn">Get Started</a>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="pricing-card standard">
+        <h2>Standard</h2>
+        <p class="price">#30,000/month</p>
+        <ul>
+          <li>5 Users</li>
+          <li>50GB Storage</li>
+          <li>Priority Email Support</li>
+          <li>Community Access</li>
+        </ul>
+        <a href="#" class="cta-btn">Choose Plan</a>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="pricing-card premium">
+        <h2>Premium</h2>
+        <p class="price">#45,000/month</p>
+        <ul>
+          <li>Unlimited Users</li>
+          <li>1TB Storage</li>
+          <li>24/7 Support</li>
+          <li>Exclusive Features</li>
+        </ul>
+        <a href="#" class="cta-btn">Get Premium</a>
+      </div>
+    </div>
+  </body>
+</html>

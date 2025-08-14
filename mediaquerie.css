@@ -1,0 +1,251 @@
+/* mini project */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Transition and Variables */
+/* :root {
+    --blue: rgb(54, 45, 172);
+    --yellow: rgb(219, 192, 36);
+    --pink: rgb(230, 123, 140);
+
+
+}
+
+.container {
+    --purple: purple;
+}
+
+.container > div {
+    background-color: var(--pink);
+    border: solid 3px var(--blue);
+    width: 100px;
+    height: 100px;
+    margin: 5px 0;
+}
+
+.container div:hover{
+
+    width: 200px;
+    background-color: var(--blue);
+}
+.div1{
+    transition: 1s ease-in 2s;
+
+}
+.div2{
+    transition-timing-function: ease;
+}
+
+.div3{
+    transition-timing-function: ease-in;
+    background-color: var(--purple);
+}
+
+.div4{
+    transition-timing-function: ease-out;
+}
+
+.stranger {
+    width: 200px;
+    height: 200px;
+    background-color: var(--purple, rgb(34, 3, 3));
+}
+.stranger:hover {
+    background-color: var(--purple, rgb(70, 169, 226));
+} */
+
+
+
+
+
+.container > div {
+    background-color: rgb(185, 93, 93);
+    border: solid 1px blue;
+    width: 400px;
+}
+.bisi1 {
+    background-color: blueviolet;
+    width: 50px;
+    height: 50px;
+    border: solid 1px red;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto; */
+    /* row-gap: 20px;
+    column-gap: 10px; */
+    gap: 10px;
+
+    grid-template-areas: 
+    "one one one" 
+    "tobi three three"
+    "tobi four four";
+}
+
+.div1 {
+    grid-area: one;
+    background-color: rgb(5, 42, 63);
+}
+
+
+.div2{
+    grid-area: tobi ;
+    background-color: rgb(69, 70, 5);
+}
+.div3{
+    grid-area: three ;
+    background-color: rgb(238, 12, 136);
+}
+.div4{
+    grid-area: four ;
+    background-color: rgb(71, 168, 119);
+}
+
+
+
+
+/*
+/* Flex-Box */
+/* .p1,.p2,.p3 {
+    background-color: lightblue;
+    width: 50px;
+    height: 300px;
+    min-width: 50px;
+
+}
+
+.p1 {
+    background-color: blue;
+    order: 3;
+    flex:  ;
+}
+.p2 {
+    background-color: rgb(168, 207, 60);
+    order: 1;
+}
+.p3 {
+    background-color: rgb(49, 196, 139);
+    order: 2;
+}
+.paragraph {
+    background-color: brown;
+    height: 1000px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+ */
+
+
+
+
+
+/* mediaquery */
+
+/* body {
+    margin: 0;
+}
+
+.headings {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: aqua;
+}
+
+.headings > h4, h5, h6 {
+    color: blueviolet;
+}
+
+.p1 p {
+    background-color: pink;
+    padding: 20px 100px;
+}
+
+.p2 p{
+    background-color: azure;
+    margin: 20px 100px;
+}
+
+.favourite {
+    background-color: bisque;
+    padding: 50px;
+}
+
+.favourite h4 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.favourite ol, .favourite > ul {
+    display: inline-block;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+   .p1, .p2 {
+    display: inline-block;
+    width: 200px;
+   }
+
+   .p2 p {
+        margin: 10px;
+        padding: 5px;
+   }
+   .p1 p {
+        margin: 10px;
+        padding: 5px;
+   }
+
+
+}
+
+@media (max-width: 425px) {
+
+    .favourite {
+        padding: 10px;
+    }
+
+    .favourite h4 {
+        font-size: 18px;
+        color: brown;
+    }
+
+    h1,h2,h3,.headings > h4,h5,h6 {
+        color: brown;
+    }
+
+
+} */
+
